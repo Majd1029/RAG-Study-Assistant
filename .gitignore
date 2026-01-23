@@ -44,6 +44,8 @@ chat_memory.json
 # Temp / uploaded files
 temp_*.pdf
 temp_*
+temp*.pdf
+temp*
 
 # PyCharm
 .idea/
