@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pkl
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# Virtual environment
+rag_env/
+venv/
+env/
+ENV/
+
+# Byte-compiled / cached / logs
+*.log
+*.sqlite3
+*.db
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# FAISS vector store
+faiss_index/
+
+# Chat memory
+chat_memory.json
+
+# Streamlit cache
+.streamlit/
+
+# VSCode
+.vscode/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Temp / uploaded files
+temp_*.pdf
+temp_*
+
+# PyCharm
+.idea/
+
+# Docker
+*.dockerignore
+Dockerfile
+
+# Others
+*.bak
+*.swp
+*.tmp
