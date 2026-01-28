@@ -5,6 +5,19 @@ It includes a **Streamlit frontend** for interactive use and a **FastAPI backend
 
 ---
 
+## **Architecture**
+
+![RAG Study Assistant Architecture](RAG_Architecture.png)
+
+The diagram above illustrates the complete data flow:
+1. **PDF Ingestion**: Documents are processed and chunked via `ingest.py`
+2. **Vector Database**: Text chunks are embedded and stored in FAISS index
+3. **RAG Pipeline**: User queries are embedded and matched against relevant document chunks
+4. **LLM Generation**: Ollama Mistral generates answers with source citations
+5. **Chat Memory**: Conversation history is maintained for multi-turn interactions
+
+---
+
 ## **Features**
 
 - Multi-PDF ingestion with metadata tracking
