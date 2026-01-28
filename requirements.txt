@@ -1,7 +1,7 @@
 streamlit==1.53.1
 fastapi==0.111.0
 uvicorn==0.23.2
-python-multipart==0.0.6
+python-multipart==0.0.7
 langchain==1.2.6
 langchain-community==0.4.1
 langchain-text-splitters==1.1.0
@@ -9,6 +9,6 @@ sentence-transformers==2.7.0
 transformers==4.41.2
 faiss-cpu==1.13.2
 pypdf==6.6.0
-torch==2.10.0+cpu
-torchvision==0.25.0+cpu
-torchaudio==2.10.0+cpu
+torch==2.10.0
+torchvision==0.25.0
+torchaudio==2.10.0
