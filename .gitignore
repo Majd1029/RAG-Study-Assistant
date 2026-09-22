@@ -1,60 +1,27 @@
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-*.pyc
-*.pkl
-*.egg-info/
-*.egg
-*.manifest
-*.spec
 
-# Virtual environment
+# Virtual environments
 rag_env/
 venv/
+.venv/
 env/
-ENV/
 
-# Byte-compiled / cached / logs
-*.log
-*.sqlite3
-*.db
-
-# OS files
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# FAISS vector store
+# Runtime artifacts — must never be committed. The app used to persist these
+# to disk; they contain the text of whatever PDFs were ingested.
 faiss_index/
-
-# Chat memory
 chat_memory.json
-
-# Streamlit cache
-.streamlit/
-
-# VSCode
-.vscode/
-
-# Jupyter Notebooks
-.ipynb_checkpoints/
-
-# Temp / uploaded files
-temp_*.pdf
 temp_*
 temp*.pdf
-temp*
+*.pdf
 
-# PyCharm
+# Streamlit
+.streamlit/secrets.toml
+
+# Media / OS / editors
+*.mp4
+.DS_Store
+Thumbs.db
+.vscode/
 .idea/
-
-# Docker
-*.dockerignore
-Dockerfile
-
-# Others
-*.bak
-*.swp
-*.tmpDemo_RAG.mp4
