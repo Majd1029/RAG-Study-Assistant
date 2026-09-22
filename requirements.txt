@@ -2,7 +2,7 @@
 # nvidia-* wheels) and the Streamlit Cloud build fails on disk or time.
 --extra-index-url https://download.pytorch.org/whl/cpu
 
-streamlit==1.41.1
+streamlit==1.64.0
 torch==2.14.0+cpu
 transformers==5.17.0
 sentence-transformers==6.1.0
