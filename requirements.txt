@@ -1,3 +1,12 @@
+# REQUIRES PYTHON 3.11
+# Set it in Streamlit Cloud: app -> Settings -> General -> Python version, or
+# under "Advanced settings" when first deploying. On Python 3.14 the torch and
+# transformers pins below have no matching wheels and the build fails with
+# "no wheels with a matching Python ABI tag".
+#
+# These versions are pinned exactly because the pipeline was measured against
+# them: 1568 MB peak RSS, 18.0 tok/s decode. See rag_pipeline.py.
+
 # CPU-only torch. Without this, pip pulls the CUDA build on Linux (~2.5GB of
 # nvidia-* wheels) and the Streamlit Cloud build fails on disk or time.
 --extra-index-url https://download.pytorch.org/whl/cpu
